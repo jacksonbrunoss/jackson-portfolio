@@ -1,11 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Navbar />
+  </div>
 </template>
 
 <script>
+import Navbar from "./components/Header/Navbar";
 export default {
   name: "App",
-  components: {}
+  components: {
+    Navbar
+  }
 };
 </script>
 
@@ -33,6 +38,7 @@ body {
   background: var(--dark);
   font-family: var(--font);
   font-size: 100%;
+  color: var(--light);
 }
 body,
 h1,
