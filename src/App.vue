@@ -3,6 +3,7 @@
     <Navbar />
     <Header />
     <About />
+    <Contact />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Navbar from "@/components/Header/Navbar";
 import Header from "@/components/Header/Header";
 import About from "@/components/About/About";
+import Contact from "@/components/Contact/Contact";
 export default {
   name: "App",
   components: {
     Navbar,
     Header,
-    About
+    About,
+    Contact
   }
 };
 </script>

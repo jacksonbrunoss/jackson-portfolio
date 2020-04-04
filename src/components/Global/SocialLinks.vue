@@ -37,7 +37,7 @@ export default {
   > li a i {
     color: var(--light);
     font-size: 2rem;
-    margin: 10px 32px 10px 0px;
+    margin: 10px 16px 10px 16px;
     transition: 0.3s linear;
     &:hover {
       color: var(--primary);
