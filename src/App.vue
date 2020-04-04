@@ -2,22 +2,26 @@
   <div id="app">
     <Navbar />
     <Header />
+    <About />
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Header/Navbar";
 import Header from "@/components/Header/Header";
+import About from "@/components/About/About";
 export default {
   name: "App",
   components: {
     Navbar,
-    Header
+    Header,
+    About
   }
 };
 </script>
 
 <style lang="scss">
+@import url("https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 :root {
   /* Fonts */
