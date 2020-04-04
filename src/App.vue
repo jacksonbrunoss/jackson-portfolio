@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <Navbar />
+    <Header />
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Header/Navbar";
+import Navbar from "@/components/Header/Navbar";
+import Header from "@/components/Header/Header";
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,
+    Header
   }
 };
 </script>
@@ -69,5 +72,22 @@ img {
 .container {
   max-width: 1144px;
   margin: 0 auto;
+}
+.btn {
+  display: block;
+  padding: 14px 40px;
+  margin: auto;
+  cursor: pointer;
+  background: linear-gradient(99.56deg, #7474bf -5.2%, #348ac7 128.15%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: uppercase;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 }
 </style>

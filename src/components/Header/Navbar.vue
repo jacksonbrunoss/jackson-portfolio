@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 .navigation {
   width: 100%;
+  position: absolute;
 }
 .content {
   width: 100%;
