@@ -2,20 +2,26 @@
   <nav class="navigation">
     <div class="container">
       <div class="content">
-        <div class="brand">
-          <img src="../../assets/logo.svg" alt="Jackson Bruno" />
-        </div>
+        <Brand />
         <div class="menu">
           <ul>
-            <li><a href="#">quem sou</a></li>
-            <li><a href="#">portfólio</a></li>
-            <li><a href="#">contato</a></li>
+            <li>
+              <a href="#">quem sou</a>
+            </li>
+            <li>
+              <a href="#">portfólio</a>
+            </li>
+            <li>
+              <a href="#">contato</a>
+            </li>
             <div class="separetion">
               <div></div>
               <div></div>
               <div></div>
             </div>
-            <li><a href="#">peça um orçamento</a></li>
+            <li>
+              <a href="#">peça um orçamento</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -24,8 +30,12 @@
 </template>
 
 <script>
+import Brand from "@/components/Global/Brand";
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  components: {
+    Brand
+  }
 };
 </script>
 

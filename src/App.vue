@@ -4,6 +4,7 @@
     <Header />
     <About />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Navbar from "@/components/Header/Navbar";
 import Header from "@/components/Header/Header";
 import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 export default {
   name: "App",
   components: {
     Navbar,
     Header,
     About,
-    Contact
+    Contact,
+    Footer
   }
 };
 </script>
