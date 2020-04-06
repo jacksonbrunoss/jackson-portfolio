@@ -25,4 +25,10 @@ export default {
     font-style: normal;
   }
 }
+/* Responsive */
+@media (max-width: 963px) {
+  .title {
+    text-align: center;
+  }
+}
 </style>

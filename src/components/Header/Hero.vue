@@ -1,8 +1,9 @@
 <template>
   <section class="hero">
     <h1>
-      <span>Jackson Bruno</span>, <br />
-      Front-end <i>/</i> UI Design
+      <span>Jackson Bruno</span>,
+      <br />Front-end
+      <i>/</i> UI Design
     </h1>
     <p>
       Sou responsável por dar vida ao seu projeto. Transformo design em páginas
@@ -14,7 +15,8 @@
 
 <script>
 export default {
-  name: "Hero"
+  name: "Hero",
+  components: {}
 };
 </script>
 
@@ -42,6 +44,21 @@ export default {
     padding: 32px 0px 64px 0px;
     line-height: 24px;
     color: var(--lighter);
+  }
+}
+/* Responsive */
+@media (max-width: 963px) {
+  .hero {
+    h1 {
+      font-size: 3rem;
+      line-height: 48px;
+      span {
+        font-size: 3rem;
+      }
+      i {
+        font-size: 3rem;
+      }
+    }
   }
 }
 </style>

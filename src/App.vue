@@ -3,6 +3,7 @@
     <Navbar />
     <Header />
     <About />
+    <Portfolio />
     <Contact />
     <Footer />
   </div>
@@ -12,6 +13,7 @@
 import Navbar from "@/components/Header/Navbar";
 import Header from "@/components/Header/Header";
 import About from "@/components/About/About";
+import Portfolio from "@/components/Portfolio/Portfolio";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 export default {
@@ -20,6 +22,7 @@ export default {
     Navbar,
     Header,
     About,
+    Portfolio,
     Contact,
     Footer
   }
@@ -41,6 +44,7 @@ export default {
   --light: #f2f2f3;
   --lighter: #dfdfe2;
   --gradient: linear-gradient(116.07deg, #19191f -1.5%, #141419 102.87%);
+  --mobile: 963px;
 }
 * {
   margin: 0;

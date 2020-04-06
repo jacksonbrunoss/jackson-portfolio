@@ -80,4 +80,10 @@ export default {
     background: var(--light);
   }
 }
+/* Responsive */
+@media (max-width: 963px) {
+  .menu {
+    display: none;
+  }
+}
 </style>
