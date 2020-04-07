@@ -3,7 +3,9 @@
     <div class="container">
       <div class="content">
         <Hero />
-        <div class="box-mouse"><Mouse /></div>
+        <div class="box-mouse">
+          <Mouse />
+        </div>
       </div>
     </div>
   </header>
@@ -16,8 +18,8 @@ export default {
   name: "Header",
   components: {
     Hero,
-    Mouse,
-  },
+    Mouse
+  }
 };
 </script>
 

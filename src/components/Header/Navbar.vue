@@ -3,16 +3,24 @@
     <div class="container">
       <div class="content">
         <Brand />
+        <div @click="MenuActive" class="menu-mobile">
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+        </div>
+        <transition name="bounce" mode>
+          <Sidebar :active="active" />
+        </transition>
         <div class="menu">
           <ul>
             <li>
-              <a href="#">quem sou</a>
+              <a href="#about">quem sou</a>
             </li>
             <li>
-              <a href="#">portfólio</a>
+              <a href="#cases">portfólio</a>
             </li>
             <li>
-              <a href="#">contato</a>
+              <a href="#contact">contato</a>
             </li>
             <div class="separetion">
               <div></div>
@@ -31,10 +39,22 @@
 
 <script>
 import Brand from "@/components/Global/Brand";
+import Sidebar from "@/components/Header/Sidebar";
 export default {
   name: "Navbar",
   components: {
-    Brand
+    Brand,
+    Sidebar
+  },
+  data() {
+    return {
+      active: false
+    };
+  },
+  methods: {
+    MenuActive() {
+      this.active = !this.active;
+    }
   }
 };
 </script>
@@ -80,10 +100,45 @@ export default {
     background: var(--light);
   }
 }
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Responsive */
 @media (max-width: 963px) {
   .menu {
     display: none;
+  }
+  .menu-mobile {
+    z-index: 999;
+    position: fixed;
+    right: 15px;
+    cursor: pointer;
+    width: 45px;
+    background: var(--darker);
+    padding: 5px;
+    .row {
+      width: 100%;
+      height: 3px;
+      background: var(--light);
+      margin: 7px 0px;
+    }
+    :nth-of-type(3) {
+      width: 80%;
+    }
   }
 }
 </style>

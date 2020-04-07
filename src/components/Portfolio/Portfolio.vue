@@ -1,5 +1,5 @@
 <template>
-  <section class="portfolio">
+  <section class="portfolio" id="cases">
     <div class="container">
       <Title :title="title" />
       <Carousel />
@@ -14,13 +14,13 @@ export default {
   name: "Portfolio",
   components: {
     Carousel,
-    Title,
+    Title
   },
   data() {
     return {
-      title: "Portfólio",
+      title: "Portfólio"
     };
-  },
+  }
 };
 </script>
 
